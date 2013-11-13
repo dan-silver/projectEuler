@@ -1,8 +1,7 @@
-def findLargestPalindrome(digits)
+def findLargestPalindrome
   largest = 0
-  n = ("9"*digits).to_i
-  n.downto(n/2).each{ |k|
-    n.downto(n/2).each{ |i|
+  999.downto(100).each{ |k|
+    k.downto(100).each{ |i|
       product = k * i
       largest = product if product.isPalindrome? and product > largest
     }
@@ -18,4 +17,4 @@ class Integer
   end
 end
 
-puts findLargestPalindrome (3)
+puts findLargestPalindrome
